@@ -1,0 +1,138 @@
+2020-11-04 11:20:09.975 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=165 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | The work [ExecuteConnectorOfActivity: flowNodeInstanceId = 120099, connectorDefinitionName = setTokenInfo] failed. The failure will be handled.
+2020-11-04 11:20:10.026 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=165 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException : "org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)"
+org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:155)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:75)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:253)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:212)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$wrapForStats$1(ConnectorExecutorImpl.java:164)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:152)
+	... 4 more
+Caused by: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:51)
+	at org.bonitasoft.engine.connector.AbstractConnector.execute(AbstractConnector.java:77)
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:73)
+	... 8 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:144)
+	at Script1.run(Script1.groovy:55)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:574)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:612)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:583)
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:48)
+	... 10 more
+
+2020-11-04 11:20:17.071 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=153 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | The work [ExecuteConnectorOfActivity: flowNodeInstanceId = 120104, connectorDefinitionName = setTokenInfo] failed. The failure will be handled.
+2020-11-04 11:20:17.108 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=153 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException : "org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)"
+org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:155)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:75)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:253)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:212)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$wrapForStats$1(ConnectorExecutorImpl.java:164)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:152)
+	... 4 more
+Caused by: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:51)
+	at org.bonitasoft.engine.connector.AbstractConnector.execute(AbstractConnector.java:77)
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:73)
+	... 8 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: com.sun.proxy.$Proxy172.setCustomUserInfoValue() is applicable for argument types: (null, java.lang.Long, java.lang.String) values: [null, 1, avi]
+Possible solutions: setCustomUserInfoValue(long, long, java.lang.String)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:144)
+	at Script1.run(Script1.groovy:55)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:574)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:612)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:583)
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:48)
+	... 10 more
+
+2020-11-04 16:14:38.060 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=153 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | The work [ExecuteConnectorOfActivity: flowNodeInstanceId = 120132, connectorDefinitionName = sendRelationshipRequest] failed. The failure will be handled.
+2020-11-04 16:14:38.097 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=153 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException : "org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1"
+org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:155)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:75)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:253)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:212)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$wrapForStats$1(ConnectorExecutorImpl.java:164)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:152)
+	... 4 more
+Caused by: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:51)
+	at org.bonitasoft.engine.connector.AbstractConnector.execute(AbstractConnector.java:77)
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:73)
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
+	at Script1.run(Script1.groovy:193)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:574)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:612)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:583)
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:48)
+	... 10 more
+
+2020-11-04 16:14:46.104 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=154 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | The work [ExecuteConnectorOfActivity: flowNodeInstanceId = 120137, connectorDefinitionName = sendRelationshipRequest] failed. The failure will be handled.
+2020-11-04 16:14:46.158 -0500 SEVERE: org.bonitasoft.engine.execution.work.InSessionBonitaWork THREAD_ID=154 | HOSTNAME=ip-10-100-101-10 | TENANT_ID=1 | org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException : "org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1"
+org.bonitasoft.engine.commons.exceptions.SBonitaRuntimeException: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:155)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.bonitasoft.engine.connector.exception.SConnectorException: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:75)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:253)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl$ExecuteConnectorCallable.call(ConnectorExecutorImpl.java:212)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$wrapForStats$1(ConnectorExecutorImpl.java:164)
+	at org.bonitasoft.engine.connector.impl.ConnectorExecutorImpl.lambda$execute$0(ConnectorExecutorImpl.java:152)
+	... 4 more
+Caused by: org.bonitasoft.engine.connector.ConnectorException: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:51)
+	at org.bonitasoft.engine.connector.AbstractConnector.execute(AbstractConnector.java:77)
+	at org.bonitasoft.engine.core.connector.impl.SConnectorAdapter.execute(SConnectorAdapter.java:73)
+	... 8 more
+Caused by: groovy.lang.MissingPropertyException: No such property: user for class: Script1
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:66)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:310)
+	at Script1.run(Script1.groovy:193)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:574)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:612)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:583)
+	at org.bonitasoft.connectors.scripting.GroovyScriptConnector.executeBusinessLogic(GroovyScriptConnector.java:48)
+	... 10 more
+
